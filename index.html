@@ -1,0 +1,50 @@
+<!DOCTYPE html">
+<html lang="en">
+<head>
+    <title>CRUD JS</title>
+    <meta charset="utf-8"/>
+    <link rel="stylesheet" type="text/css" href="styles.css" />    
+    
+    <script src="JavaScriptFile.js"></script>
+</head>
+
+<body>
+    <div class="all">
+        <h1 class="title">Simple CRUD</h1>
+        <div class="center-fixed">    
+            <form id="frm">
+                <label for="txtName">Name</label><br>
+                <input type="text" id="txtName" placeholder="Name"><br>
+                
+                <label for="Birth">Birth Date</label><br>
+                <input type="date" id="Birth" value="1990-08-29" required>
+                
+                <fieldset>
+                    <legend>Gender</legend>
+                    <input type="radio" name="Gender" value="male" id="male" checked>
+                    <label for="male">Male</label><br>        
+                    
+                    <input type="radio" name="Gender" value="female" id="female">
+                    <label for="female">Female</label>
+                </fieldset>
+                
+                <input type="submit" name="" id="btn1" value="Register">
+            </form>
+        </div>
+        <table>
+            <caption><h2>Table</h2></caption>
+            <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>Name</th>
+                    <th>Birth Date</th>
+                    <th>Gender</th>
+                    <th>Last Updated</th>
+                </tr>
+            </thead>
+            <tbody id="body result"></tbody>
+            <tfoot></tfoot>
+        </table>
+    </div>
+</body>
+</html>
